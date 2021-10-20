@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+  <ul>
+    {% for student in cummulative_gpo %}
+      <li>{{ student }}</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
